@@ -1,0 +1,201 @@
+/*General style*/
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100%vh;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Open Sans', Calibri, sans-serif;
+    margin: 0 5%;
+    background-image: url("images/bg5.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/*Header style*/
+header{
+    color: rgb(5, 15, 48);
+    margin: 1% 0;
+    text-align: center;
+    background: linear-gradient( to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+    border-radius: 2rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    backdrop-filter: blur(2rem);
+    border-radius: 5px;
+}
+h1{
+    padding: 1% 0;
+}
+
+/*footer style*/
+
+footer{
+    text-align: center;
+    padding: 1% 0;
+    background-image: url("images/footbg2.png");
+    border: 0px ;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*big screen style*/
+@media only screen and (min-width: 901px) {
+    .nav_container {
+      display: flex;
+      justify-content: center;
+      height: 2rem;
+      text-align: center;
+      font-size: large;
+      background-image: url("images/NavBackground2.jpg");
+    }
+    .nav_parts {
+      position: relative;
+      display: inline-block;
+      width: 125px;
+      padding-top: 0.35rem;
+    }
+    .nav_parts:hover{
+        background: #67bbda;
+        -moz-box-shadow:    inset 0 0 10px #000000;
+        -webkit-box-shadow: inset 0 0 10px #000000;
+        box-shadow:         inset 0 0 10px #000000;
+    }
+    .drop-content {
+      display: none;
+      position: absolute;
+      background: linear-gradient(to top ,#3d8fae,#26647a);
+      min-width: 100%;
+      margin-top: 0.25rem;
+    }
+    .drop_parts{
+        min-height: 2rem;
+        padding-top: 1rem;
+    
+    }
+    .nav_parts:hover .drop-content {
+      display: block;
+      padding: 0;
+    }
+    .drop_parts:hover{
+      background: linear-gradient(to top ,rgb(65, 151, 177),rgb(40, 51, 100));
+        
+    }
+    drop-content {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      margin: auto;
+    }
+
+  }
+
+  /*General style*/
+
+@media only screen and (max-width: 1950px){
+    .contAll {
+        background: linear-gradient(
+        to right bottom, rgba(255, 255, 255, 0.7),rgba(255, 255, 255, 0.3));
+        border-radius: 0.5rem;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        margin: 1% 0;
+        margin-bottom: 1%;
+        display: flex;
+    } 
+    .aside_links{
+        width: 100%;
+        list-style: none;
+    }
+    main{
+       width: 100%; 
+    }
+    article{
+        min-height: 120px;
+        background: linear-gradient(to bottom ,rgba(255, 90, 94,0.2),rgb(61, 143, 174));
+        border: 5px groove rgba(0,0,0,0.3);
+        border-radius: 3px;
+        margin: 1%;
+        padding: 2% 0;
+        color: #064367;
+    }
+    #article3{
+        padding-right: 13px;
+    }
+    article>p{
+        padding-top:1% ;
+        text-align: center;
+        font-size: large;
+        color: black;
+    }
+    .articl_imgs{
+        float: right;
+    }
+    aside{
+        background: linear-gradient(to top ,rgba(245, 245, 245, 0.7),rgba(9, 54, 93, 0.24),rgb(37, 128, 171));
+        width: 15%;
+        border: #06456a 4px groove;
+        border-radius: 3px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        text-align: center;
+        margin: 1% 0 1% 1%;
+        height: 50%;
+        padding: 5% 0;
+    }
+    aside ul{
+        list-style: none;
+    }
+    aside ul li a{
+        color: black;
+    }
+    aside h1{
+        height: 3.5rem;
+    }
+    .drop-content{
+        display: none;
+        list-style: none;
+    }
+    .nav_container{
+        list-style: none;
+        background:linear-gradient(to left ,#3d8fae,#aae8ff85,#3d8fae);
+    }
+}
+
+
+/*small screen style*/
+@media only screen and (max-width: 900px) {
+    body{
+        margin: 0%;
+    }
+    .contAll {
+        flex-direction: column;
+    }
+    aside{
+        width: 99%;
+        margin: 0 1% 1% 0;
+    }
+    .table{
+        display: block;
+        text-align: center;
+    }
+    .nav_parts{
+        border: #064367 solid 3px;
+        font-size:xx-large;
+    }
+    .nav_parts:hover{
+        background: linear-gradient(to left ,#3d8fae,#09365d);
+    }
+    .dropdown:hover ul{
+        display: block;
+        background: linear-gradient(to bottom ,#3d8fae,#09365d);
+    }
+    .drop_parts:hover{
+        background: linear-gradient(to top ,rgb(65, 151, 177),rgb(40, 51, 100));
+    }
+}
